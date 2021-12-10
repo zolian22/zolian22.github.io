@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="c.css">
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<script src="c.js"></script>
+<div class="center">
+    <br><h2 style="color: #3d4a65">欢迎使用这个计算器</h2>
+    <form name="calculator">
+        <input type="button" id="clear" class="btn other" value="C" onclick="clear()">
+        <input type="text" id="display">
+        <br>
+        <input type="button" class="btn number" value="7" onclick="get(this.value);">
+        <input type="button" class="btn number" value="8" onclick="get(this.value);">
+        <input type="button" class="btn number" value="9" onclick="get(this.value);">
+        <input type="button" class="btn operator" value="+" onclick="get(this.value);">
+        <br>
+        <input type="button" class="btn number" value="4" onclick="get(this.value);">
+        <input type="button" class="btn number" value="5" onclick="get(this.value);">
+        <input type="button" class="btn number" value="6" onclick="get(this.value);">
+        <input type="button" class="btn operator" value="*" onclick="get(this.value);">
+        <br>
+        <input type="button" class="btn number" value="1" onclick="get(this.value);">
+        <input type="button" class="btn number" value="2" onclick="get(this.value);">
+        <input type="button" class="btn number" value="3" onclick="get(this.value);">
+        <input type="button" class="btn operator" value="-" onclick="get(this.value);">
+        <br>
+        <input type="button" class="btn number" value="Pi" onclick="get(Math.PI);">
+        <input type="button" class="btn number" value="0" onclick="get(this.value);">
+        <input type="button" class="btn number" value="e" onclick="get(Math.E);">
+        <input type="button" class="btn operator" value="/" onclick="get(this.value);">
+        <br>
+        <input type="button" class="btn operator" value="." onclick="get(this.value);">
+        <input type="button" class="btn operator" value="sqrt" onclick="calculate(this.value);">
+        <input type="button" class="btn operator" value="sin" onclick="calculate(this.value);">
+        <input type="button" class="btn operator" value="cos" onclick="calculate(this.value);">
+        <br>
+        <input type="button" class="btn operator" value="tan" onclick="calculate(this.value);">
+        <input type="button" class="btn operator" value="asin" onclick="calculate(this.value);">
+        <input type="button" class="btn operator" value="1√x" onclick="calculate(this.value);">
+        <input type="button" class="btn other" value="=" onclick="calculates();">
+    </form>
+    <br><p>相对路径显示的图片：</p><br>
+    <img src="background.PNG">
+    <br><p>绝对路径显示的图片：</p><br>
+    <img src="zolian22.github.io/mybatis-source/raw/master/background1.PNG">
+</div>
+</body>
+</html>
